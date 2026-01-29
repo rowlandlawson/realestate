@@ -1,0 +1,22 @@
+{
+  "name": "uptown-real-estate",
+  "version": "1.0.0",
+  "description": "Professional real estate website built with Bootstrap 4",
+  "main": "index.html",
+  "scripts": {
+    "start": "open index.html",
+    "build": "npm run sass",
+    "sass": "sass scss/style.scss css/style.css"
+  },
+  "keywords": [
+    "real-estate",
+    "bootstrap",
+    "responsive",
+    "property"
+  ],
+  "author": "Uptown Real Estate",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.69.0"
+  }
+}
