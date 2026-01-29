@@ -1,11 +1,6 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "*.html",
-      "use": "@vercel/static"
-    }
-  ],
+  "public": false,
   "routes": [
     {
       "src": "/css/(.*)",
@@ -34,6 +29,10 @@
       "headers": {
         "Cache-Control": "public, max-age=31536000, immutable"
       }
+    },
+    {
+      "src": "/(.*\\.html)$",
+      "dest": "/$1"
     },
     {
       "src": "/(.*)",
